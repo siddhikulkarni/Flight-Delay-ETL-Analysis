@@ -1,19 +1,12 @@
 # ETL-Project
-This project was meant as a basic ETL using SQL and Python
+This project executes a fundamental Extract, Transform, Load (ETL) process utilizing SQL and Python. Flight delay data from 2015, sourced from Kaggle's dataset repository, was utilized for analysis.
 
-Flight delay data from 2015 was used from Kaggle here: https://www.kaggle.com/usdot/flight-delays#flights.csv
-Three Tables were included:
+The workflow includes the following steps:
 
-1) Arlines: included the shortcode and corresponding airline name
-2) Airports: included the IATA airport code, full name, address and lat long of airports
-3) Flights: Includes flight delay information with delay time, airline shortcode and date details
-
-Workflow was as follows:
-
-Upload excel sheets in SQL Lite Database
-Transform data using SQL Alchemy in Python (performing queries and joins)
-Using the transformed data to Python for further analysis (performing equations on the data in pandas, adding columns etc.)
-Uploading our analysis directly from Python into our SQLite database
-We also exported our transformed tables into MySQL in case the uder prefers using MySQL
+1. Uploading Excel sheets into a SQL Lite database.
+2. Performing data transformation using SQL Alchemy in Python, including executing queries and joins, data is rolled up to the desired grain.
+3. Leveraging the transformed data in Python for further analysis, which involved performing calculations and adding additional columns using pandas.
+4. Directly uploading the analysis results from Python back into the SQLite database.
+5. Additionally, transformed tables were exported into MySQL to accommodate user preferences for database management systems.
 
 
